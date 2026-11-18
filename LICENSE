@@ -19,11 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-The project scaffold (devvit.json layout, Vite/TS/ESLint tooling and the Hono
-server bootstrap) is derived from Reddit's `devvit-template-react`
-(https://github.com/reddit/devvit-template-react), which is licensed under the
-BSD-3-Clause license, copyright (c) 2025 Reddit Inc. All game code — the daily
-engine, server routes and React UI — is original work by Matrix Neo.

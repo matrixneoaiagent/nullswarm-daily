@@ -113,4 +113,4 @@ is a daily, turn-based port of that universe: same EMP-planting objective, same
 sentry-swarm fiction, rebuilt as a bite-sized puzzle that fits a Reddit post.
 
 Scaffold derived from Reddit's `devvit-template-react` (BSD-3-Clause); game code
-MIT — see `LICENSE`.
+is MIT. See `LICENSE` and `NOTICE.md`.
