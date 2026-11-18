@@ -1,0 +1,118 @@
+@import 'tailwindcss';
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background-color: #05070d;
+}
+
+.ns-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 0.75rem 1.25rem;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(8, 145, 178, 0.16), transparent 60%),
+    #05070d;
+  color: #e2e8f0;
+}
+
+.ns-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: 0.02em;
+}
+
+.ns-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: 0.65rem;
+  border: 1px solid rgba(34, 211, 238, 0.25);
+  background: rgba(15, 23, 42, 0.75);
+  box-shadow: 0 0 24px rgba(8, 145, 178, 0.12) inset;
+}
+
+.ns-btn {
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(34, 211, 238, 0.55);
+  background: rgba(8, 145, 178, 0.85);
+  color: #ecfeff;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: background 120ms ease;
+}
+
+.ns-btn:hover {
+  background: rgba(14, 165, 233, 0.95);
+}
+
+.ns-btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.ns-btn-ghost {
+  background: transparent;
+  color: #a5f3fc;
+  border-color: rgba(148, 163, 184, 0.4);
+}
+
+.ns-btn-ghost:hover {
+  background: rgba(148, 163, 184, 0.12);
+}
+
+.ns-pad {
+  cursor: pointer;
+  width: 2.6rem;
+  height: 2.2rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(30, 41, 59, 0.6);
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.ns-pad:active {
+  background: rgba(8, 145, 178, 0.45);
+}
+
+.ns-pad-wait {
+  color: #67e8f9;
+  border-color: rgba(34, 211, 238, 0.35);
+}
+
+.ns-wall {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(15, 23, 42, 0.95) 0px,
+    rgba(15, 23, 42, 0.95) 4px,
+    rgba(2, 6, 23, 0.95) 4px,
+    rgba(2, 6, 23, 0.95) 8px
+  );
+}
+
+@keyframes ns-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.35);
+    opacity: 0.65;
+  }
+}
+
+.ns-pulse {
+  animation: ns-pulse 1.6s ease-in-out infinite;
+}
